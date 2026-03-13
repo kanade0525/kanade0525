@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- タイピングアニメーション -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%E3%81%A4%E3%81%8F%E3%82%8B%E3%81%AE%E3%81%8C%E5%A5%BD%E3%81%8D%E3%81%AA+Web+%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2+%F0%9F%94%A7;%E3%82%B2%E3%83%BC%E3%83%A0+%2F+Chrome%E6%8B%A1%E5%BC%B5+%2F+%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0;%E6%80%9D%E3%81%84%E3%81%A4%E3%81%84%E3%81%9F%E3%82%89%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E4%BD%9C%E3%82%8B+%F0%9F%9B%A0%EF%B8%8F" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=DotGothic16&size=24&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&repeat=true&width=700&height=60&lines=%E3%81%A4%E3%81%8F%E3%82%8B%E3%81%AE%E3%81%8C%E5%A5%BD%E3%81%8D%E3%81%AA+Web+%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2+%F0%9F%94%A7;%E3%82%B2%E3%83%BC%E3%83%A0+%2F+Chrome%E6%8B%A1%E5%BC%B5+%2F+%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0;%E6%80%9D%E3%81%84%E3%81%A4%E3%81%84%E3%81%9F%E3%82%89%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E4%BD%9C%E3%82%8B+%F0%9F%9B%A0%EF%B8%8F" alt="Typing SVG" /></a>
 
 <!-- バッジ -->
 
