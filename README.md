@@ -1,10 +1,11 @@
 <div align="center">
 
 <!-- タイピングアニメーション -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=DotGothic16&size=24&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&repeat=true&width=700&height=60&lines=%E3%81%A4%E3%81%8F%E3%82%8B%E3%81%AE%E3%81%8C%E5%A5%BD%E3%81%8D%E3%81%AA+Web+%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2;%E3%82%B2%E3%83%BC%E3%83%A0+%2F+Chrome%E6%8B%A1%E5%BC%B5+%2F+%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0;%E6%80%9D%E3%81%84%E3%81%A4%E3%81%84%E3%81%9F%E3%82%89%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E4%BD%9C%E3%82%8B" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=DotGothic16&size=24&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&repeat=true&width=700&height=60&lines=Ruby+%2F+JavaScript+%E3%81%A7%E4%BD%95%E3%81%A7%E3%82%82%E4%BD%9C%E3%82%8B+Web+%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2;%E3%82%B2%E3%83%BC%E3%83%A0+%2F+Chrome%E6%8B%A1%E5%BC%B5+%2F+LINE+Bot+%2F+%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0;%E6%80%9D%E3%81%84%E3%81%A4%E3%81%84%E3%81%9F%E3%82%89%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E4%BD%9C%E3%82%8B" alt="Typing SVG" /></a>
 
 <!-- バッジ -->
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-kanade0525-70A5FD?style=flat-square)](https://kanade0525.github.io/portfolio/)
 ![Profile Views](https://komarev.com/ghpvc/?username=kanade0525&color=70A5FD&style=flat-square&label=Profile+Views)
 ![GitHub followers](https://img.shields.io/github/followers/kanade0525?style=flat-square&color=70A5FD&label=Followers)
 
@@ -14,11 +15,11 @@
 
 ### About Me
 
-- 千葉, Japan
-- JavaScript / TypeScript でいろいろ作るのが好き
-- 不思議のダンジョン風ローグライクゲームを制作中（Nuxt 3 + Phaser 3）
-- ブラウザゲーム、Chrome 拡張、スクレイピングツール、iOS アプリなど雑多に開発
-- Uフレットのコードを MIDI に変換するツールも作った
+- 千葉, Japan / Web エンジニア（業界3年目）
+- 外国語大学 → プログラミングに目覚めて IT 業界へ転身
+- Ruby on Rails / JavaScript が得意（実務 3-4 年）
+- 個人開発ではゲーム、Chrome 拡張、スクレイピング、LINE Bot など雑多に作る
+- 英検準1級 / TOEIC 775
 
 <br>
 
@@ -32,6 +33,7 @@
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 **Frameworks & Libraries**
 
@@ -43,7 +45,10 @@
 **Infrastructure & Tools**
 
 ![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Chrome Extensions](https://img.shields.io/badge/Chrome_Extensions-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
+![Google Apps Script](https://img.shields.io/badge/GAS-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 <br>
