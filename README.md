@@ -3,6 +3,11 @@
 <!-- タイピングアニメーション -->
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%E3%81%A4%E3%81%8F%E3%82%8B%E3%81%AE%E3%81%8C%E5%A5%BD%E3%81%8D%E3%81%AA+Web+%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2+%F0%9F%94%A7;%E3%82%B2%E3%83%BC%E3%83%A0+%2F+Chrome%E6%8B%A1%E5%BC%B5+%2F+%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0;%E6%80%9D%E3%81%84%E3%81%A4%E3%81%84%E3%81%9F%E3%82%89%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E4%BD%9C%E3%82%8B+%F0%9F%9B%A0%EF%B8%8F" alt="Typing SVG" /></a>
 
+<!-- バッジ -->
+
+![Profile Views](https://komarev.com/ghpvc/?username=kanade0525&color=70A5FD&style=flat-square&label=Profile+Views)
+![GitHub followers](https://img.shields.io/github/followers/kanade0525?style=flat-square&color=70A5FD&label=Followers)
+
 </div>
 
 <br>
@@ -73,6 +78,50 @@
 
 <br>
 
+### 🔥 Streak
+
+<div align="center">
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=kanade0525&theme=tokyonight&hide_border=true&locale=ja&date_format=%5BY.%5Dn.j&background=00000000)](https://git.io/streak-stats)
+
+</div>
+
+<br>
+
+### 📈 Profile Summary
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/output/profile-summary-card-output/tokyonight/0-profile-details.svg" />
+</div>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/output/profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/output/profile-summary-card-output/tokyonight/2-most-commit-language.svg" />
+</div>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/output/profile-summary-card-output/tokyonight/3-stats.svg" />
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/output/profile-summary-card-output/tokyonight/4-productive-time.svg" />
+</div>
+
+<br>
+
+### ⌨️ WakaTime
+
+<!--START_SECTION:waka-->
+*WakaTime セットアップ後に自動更新されます*
+<!--END_SECTION:waka-->
+
+<br>
+
+### 📈 Contribution Graph
+
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=kanade0525&theme=tokyo-night&hide_border=true&bg_color=00000000)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
+
+<br>
+
 ### 🐍 Contribution Snake
 
 <div align="center">
@@ -92,13 +141,5 @@
 <div align="center">
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=kanade0525&theme=tokyonight&no-frame=true&no-bg=true&column=6&title=MultiLanguage,Commit,Issues,PullRequest,Repository)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
-<br>
-
-<div align="center">
-
-![Profile Views](https://komarev.com/ghpvc/?username=kanade0525&color=70A5FD&style=flat-square&label=Profile+Views)
 
 </div>
