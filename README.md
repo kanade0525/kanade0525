@@ -9,17 +9,11 @@
 
 ### 🧑‍💻 About Me
 
-```yaml
-name: kanade0525
-location: Okinawa, Japan 🌺
-focus: JavaScript / TypeScript でいろいろ作ること
-current_project: 不思議のダンジョン風ローグライクゲーム（Nuxt 3 + Phaser 3）
-things_i_build:
-  - ブラウザゲーム（ローグライク、ぷよぷよ、タイピング）
-  - Chrome 拡張機能（cron式を人間が読める形に翻訳）
-  - スクレイピングツール（さわやか店舗情報、Uフレットコード → MIDI変換）
-  - iOS アプリ（Swift）
-```
+- 📍 千葉, Japan
+- 🔧 JavaScript / TypeScript でいろいろ作るのが好き
+- 🎮 不思議のダンジョン風ローグライクゲームを制作中（Nuxt 3 + Phaser 3）
+- 🧩 ブラウザゲーム、Chrome 拡張、スクレイピングツール、iOS アプリなど雑多に開発
+- 🎵 Uフレットのコードを MIDI に変換するツールも作った
 
 <br>
 
@@ -38,7 +32,7 @@ things_i_build:
 
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
 ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Ruby on Rails](https://img.shields.io/badge/Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white)
 ![Phaser](https://img.shields.io/badge/Phaser.js-CE3262?style=for-the-badge&logoColor=white)
 
 **Infrastructure & Tools**
