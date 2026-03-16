@@ -112,7 +112,68 @@
 ### WakaTime
 
 <!--START_SECTION:waka-->
-*WakaTime セットアップ後に自動更新されます*
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-30.69%20million%20lines%20of%20code-blue?style=flat)
+
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                1079 commits        ███░░░░░░░░░░░░░░░░░░░░░░   13.52 % 
+🌆 Daytime                3211 commits        ██████████░░░░░░░░░░░░░░░   40.25 % 
+🌃 Evening                3244 commits        ██████████░░░░░░░░░░░░░░░   40.66 % 
+🌙 Night                  444 commits         █░░░░░░░░░░░░░░░░░░░░░░░░   05.57 % 
+```
+📅 **I'm Most Productive on Saturday** 
+
+```text
+Monday                   914 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.46 % 
+Tuesday                  932 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.68 % 
+Wednesday                1222 commits        ████░░░░░░░░░░░░░░░░░░░░░   15.32 % 
+Thursday                 1357 commits        ████░░░░░░░░░░░░░░░░░░░░░   17.01 % 
+Friday                   774 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.70 % 
+Saturday                 1541 commits        █████░░░░░░░░░░░░░░░░░░░░   19.32 % 
+Sunday                   1238 commits        ████░░░░░░░░░░░░░░░░░░░░░   15.52 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Tokyo
+
+💬 Programming Languages: 
+TypeScript               7 mins              ███████░░░░░░░░░░░░░░░░░░   28.49 % 
+Vue.js                   6 mins              ███████░░░░░░░░░░░░░░░░░░   28.28 % 
+Markdown                 6 mins              ███████░░░░░░░░░░░░░░░░░░   27.65 % 
+YAML                     2 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   09.16 % 
+JSON                     1 min               ██░░░░░░░░░░░░░░░░░░░░░░░   06.42 % 
+
+🔥 Editors: 
+VS Code                  13 mins             ██████████████░░░░░░░░░░░   55.31 % 
+Cursor                   11 mins             ███████████░░░░░░░░░░░░░░   44.69 % 
+
+🐱‍💻 Projects: 
+roguelike-game           15 mins             ████████████████░░░░░░░░░   63.19 % 
+kanade0525-profile       5 mins              ██████░░░░░░░░░░░░░░░░░░░   24.15 % 
+ishidakanade             3 mins              ███░░░░░░░░░░░░░░░░░░░░░░   12.66 % 
+
+💻 Operating System: 
+Mac                      24 mins             █████████████████████████   100.00 % 
+```
+
+**I Mostly Code in JavaScript** 
+
+```text
+JavaScript               8 repos             ███████████░░░░░░░░░░░░░░   42.11 % 
+Ruby                     5 repos             ███████░░░░░░░░░░░░░░░░░░   26.32 % 
+TypeScript               3 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.79 % 
+Swift                    1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   05.26 % 
+HTML                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   05.26 % 
+```
+
+
+
+
+ Last Updated on 16/03/2026 02:00:15 UTC
 <!--END_SECTION:waka-->
 
 <br>
