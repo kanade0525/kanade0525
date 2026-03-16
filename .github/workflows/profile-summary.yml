@@ -16,4 +16,4 @@ jobs:
           BRANCH_NAME: output
           UTC_OFFSET: 9
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
