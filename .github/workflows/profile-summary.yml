@@ -17,5 +17,22 @@ jobs:
           USERNAME: kanade0525
           BRANCH_NAME: profile-summary
           UTC_OFFSET: 9
+          AUTO_PUSH: "false"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Debug output
+        run: |
+          echo "=== Generated files ==="
+          find . -name "*.svg" -o -name "*.md" | head -50
+          ls -la profile-summary-card-output/ 2>/dev/null || echo "No profile-summary-card-output dir"
+      - name: Push to profile-summary branch
+        run: |
+          cd profile-summary-card-output || exit 0
+          git init
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add .
+          git commit -m "Update profile summary cards"
+          git branch -M profile-summary
+          git remote add origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/kanade0525/kanade0525.git
+          git push -f origin profile-summary
