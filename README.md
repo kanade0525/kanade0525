@@ -96,15 +96,15 @@
 ### Profile Summary
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/profile-summary-card-output/tokyonight/0-profile-details.svg" />
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/0-profile-details.svg" />
 </div>
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/profile-summary-card-output/tokyonight/2-most-commit-language.svg" />
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/1-repos-per-language.svg" />
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/2-most-commit-language.svg" />
 </div>
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/profile-summary-card-output/tokyonight/3-stats.svg" />
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/profile-summary-card-output/tokyonight/4-productive-time.svg" />
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/3-stats.svg" />
+  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/4-productive-time.svg" />
 </div>
 
 <br>
