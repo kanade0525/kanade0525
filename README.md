@@ -177,21 +177,31 @@ Swift                    1 repo              █░░░░░░░░░░�
 
 <br>
 
-### Space Shooter
-
-<div align="center">
-
-![Space Shooter](gh-space-shooter.gif)
-
-</div>
-
-<br>
-
 ### Contribution Graph
 
 <div align="center">
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=kanade0525&theme=tokyo-night&hide_border=true&bg_color=00000000)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
+
+<br>
+
+### Trophy
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=kanade0525&theme=tokyonight&no-frame=true&no-bg=true&column=6&title=MultiLanguage,Commit,Issues,PullRequest,Repository)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+<br>
+
+### Space Shooter
+
+<div align="center">
+
+![Space Shooter](gh-space-shooter.gif)
 
 </div>
 
@@ -206,15 +216,5 @@ Swift                    1 repo              █░░░░░░░░░░�
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake-dark.svg" />
 </picture>
-
-</div>
-
-<br>
-
-### Trophy
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=kanade0525&theme=tokyonight&no-frame=true&no-bg=true&column=6&title=MultiLanguage,Commit,Issues,PullRequest,Repository)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
