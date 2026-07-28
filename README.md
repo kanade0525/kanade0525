@@ -112,7 +112,9 @@
 ### WakaTime
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-20%20hrs%2011%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-18%20hrs%2058%20mins-blue?style=flat)
+
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-16%20hrs%2016%20mins-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-30.33%20million%20lines%20of%20code-blue?style=flat)
 
@@ -155,20 +157,26 @@ No Activity Tracked This Week
 No Activity Tracked This Week
 ```
 
+🤖 **AI Coding This Week** 
+
+```text
+No AI Coding Activity Tracked This Week
+```
+
 **I Mostly Code in JavaScript** 
 
 ```text
-JavaScript               7 repos             ████████░░░░░░░░░░░░░░░░░   33.33 % 
-TypeScript               3 repos             ████░░░░░░░░░░░░░░░░░░░░░   14.29 % 
-HTML                     2 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   09.52 % 
-Vue                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   04.76 % 
-Python                   1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   04.76 % 
+TypeScript               3 repos             ███░░░░░░░░░░░░░░░░░░░░░░   13.64 % 
+CSS                      2 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   09.09 % 
+HTML                     2 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   09.09 % 
+Vue                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   04.55 % 
+Python                   1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   04.55 % 
 ```
 
 
 
 
- Last Updated on 27/07/2026 03:43:36 UTC
+ Last Updated on 28/07/2026 02:59:37 UTC
 <!--END_SECTION:waka-->
 
 <br>
