@@ -11,7 +11,7 @@ on:
     - cron: "30 21 * * *" # 日本時間 6:30
   workflow_dispatch:
   push:
-    branches: [main, widgets]
+    branches: [main]
     paths:
       - tools/**
       - .github/workflows/widgets.yml

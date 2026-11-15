@@ -1,5 +1,7 @@
 <!--
   画像は tools/build.cjs で作っている。文言を変えるときはそちらを直して作り直す。
+  STATUS の4枚 (stat-*.svg) は tools/stats.cjs が、widgets/ と profile-3d-contrib/ は既製の Action が、
+  毎日作り直す (.github/workflows/widgets.yml)。
   <picture> の中は改行しない (空白が入ると、リンクの下線が画像の横に小さく出る)。
 -->
 
@@ -28,11 +30,39 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/skills-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/skills-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/skills-dark.svg" width="840" alt="スキル: Ruby (Rails)、JavaScript、TypeScript、Vue.js / Nuxt 3、HTML5 / CSS3、Python、SQL、AWS、Docker、Linux、Performance Tuning、English" /></picture>
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ruby%2Crails%2Cjs%2Cts%2Cvue%2Cnuxtjs%2Chtml%2Ccss%2Cpy%2Caws%2Cdocker%2Clinux&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ruby%2Crails%2Cjs%2Cts%2Cvue%2Cnuxtjs%2Chtml%2Ccss%2Cpy%2Caws%2Cdocker%2Clinux&theme=light" /><img src="https://skillicons.dev/icons?i=ruby%2Crails%2Cjs%2Cts%2Cvue%2Cnuxtjs%2Chtml%2Ccss%2Cpy%2Caws%2Cdocker%2Clinux&theme=dark" height="44" alt="Ruby, Rails, JavaScript, TypeScript, Vue, Nuxt, HTML, CSS, Python, AWS, Docker, Linux" /></picture>
+
+<br>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-status-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-status-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-status-dark.svg" width="840" alt="STATUS" /></picture>
+
+<p>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-record-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-record-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-record-dark.svg" width="49%" alt="GitHub の記録（コントリビューション、プルリクエスト、イシュー、連続日数）" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-langs-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-langs-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-langs-dark.svg" width="49%" alt="よく使う言語の割合" /></picture>
+</p>
+<p>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-recent-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-recent-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-recent-dark.svg" width="49%" alt="最近更新したリポジトリ" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-waka-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-waka-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/stat-waka-dark.svg" width="49%" alt="WakaTime で記録した、この7日間のコーディング時間" /></picture>
+</p>
+
+<p>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/stats-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/stats-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/stats-dark.svg" height="180" alt="GitHub Stats" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/top-langs-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/top-langs-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/top-langs-dark.svg" height="180" alt="よく使う言語" /></picture>
+</p>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=kanade0525&background=000000&border=ffffff&stroke=ffffff&ring=f7d51d&fire=e76e55&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=f7d51d&sideLabels=ffffff&dates=a2a2b0&border_radius=0&locale=ja&date_format=%5BY.%5Dn.j" /><source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=kanade0525&background=ffffff&border=212529&stroke=212529&ring=a88a00&fire=b5432e&currStreakNum=333333&sideNums=333333&currStreakLabel=a88a00&sideLabels=333333&dates=6b6b6b&border_radius=0&locale=ja&date_format=%5BY.%5Dn.j" /><img src="https://streak-stats.demolab.com?user=kanade0525&background=000000&border=ffffff&stroke=ffffff&ring=f7d51d&fire=e76e55&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=f7d51d&sideLabels=ffffff&dates=a2a2b0&border_radius=0&locale=ja&date_format=%5BY.%5Dn.j" height="180" alt="連続コントリビューション日数" /></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/trophy-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/trophy-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/trophy-dark.svg" width="700" alt="GitHub のトロフィー" /></picture>
+
 <br>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-activity-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-activity-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-activity-dark.svg" width="840" alt="ACTIVITY" /></picture>
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/profile-3d-contrib/profile-night-rainbow.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/profile-3d-contrib/profile-season-animate.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/profile-3d-contrib/profile-night-rainbow.svg" width="840" alt="コントリビューションを立体で描いた図" /></picture>
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake.svg" /><img alt="コントリビューションを食べて進むヘビ" src="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake-dark.svg" /></picture>
+
+<img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/widgets/metrics.svg" width="480" alt="GitHub の活動のまとめ（メトリクス）" />
 
 </div>
 
