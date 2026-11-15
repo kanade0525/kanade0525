@@ -1,115 +1,46 @@
+<!--
+  画像は tools/build.cjs で作っている。文言を変えるときはそちらを直して作り直す。
+  <picture> の中は改行しない (空白が入ると、リンクの下線が画像の横に小さく出る)。
+-->
+
 <div align="center">
 
-<!-- タイピングアニメーション -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=DotGothic16&size=24&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&repeat=true&width=700&height=60&lines=Ruby+%2F+JavaScript+%E3%81%A7%E4%BD%95%E3%81%A7%E3%82%82%E4%BD%9C%E3%82%8B+Web+%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2;%E3%82%B2%E3%83%BC%E3%83%A0+%2F+Chrome%E6%8B%A1%E5%BC%B5+%2F+LINE+Bot+%2F+%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0;%E6%80%9D%E3%81%84%E3%81%A4%E3%81%84%E3%81%9F%E3%82%89%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9A%E4%BD%9C%E3%82%8B" alt="Typing SVG" /></a>
+<a href="https://kanade0525.github.io/portfolio/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/header-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/header-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/header-dark.svg" width="840" alt="石田かなで。Web エンジニア、6年目。得意は Ruby と Nuxt 3。Ruby と JavaScript でなんでも作る。思いついたらとりあえず作る。" /></picture></a>
 
-<!-- バッジ -->
+<br>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-kanade0525-70A5FD?style=flat-square)](https://kanade0525.github.io/portfolio/)
-![Profile Views](https://komarev.com/ghpvc/?username=kanade0525&color=70A5FD&style=flat-square&label=Profile+Views)
-![GitHub followers](https://img.shields.io/github/followers/kanade0525?style=flat-square&color=70A5FD&label=Followers)
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-works-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-works-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-works-dark.svg" width="840" alt="WORKS" /></picture>
+
+<p>
+  <a href="https://github.com/kanade0525/getting-secure-it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-getting-secure-it-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-getting-secure-it-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-getting-secure-it-dark.svg" width="49%" alt="Getting Secure It: ネットショップを24日間、毎日ちがう攻撃から守りながら Web セキュリティを学ぶゲーム" /></picture></a>
+  <a href="https://github.com/kanade0525/roguelike-game"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-roguelike-game-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-roguelike-game-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-roguelike-game-dark.svg" width="49%" alt="Katabasis: 入るたびに形の変わるダンジョンを探索する、不思議のダンジョン風ローグライク" /></picture></a>
+</p>
+<p>
+  <a href="https://github.com/kanade0525/showa-retro-css"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-showa-retro-css-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-showa-retro-css-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-showa-retro-css-dark.svg" width="49%" alt="昭和レトロ.css: 画像も JavaScript も使わない、昭和レトロな CSS フレームワーク" /></picture></a>
+  <a href="https://github.com/kanade0525/oyayubi-dojo"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-oyayubi-dojo-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-oyayubi-dojo-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/work-oyayubi-dojo-dark.svg" width="49%" alt="親指シフトタイピング道場: 同時打鍵のズレをミリ秒で見せる、親指シフトの練習サイト" /></picture></a>
+</p>
+
+ほかの作品は [ポートフォリオ](https://kanade0525.github.io/portfolio/) にあります。
+
+<br>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-skill-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-skill-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-skill-dark.svg" width="840" alt="SKILL" /></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/skills-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/skills-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/skills-dark.svg" width="840" alt="スキル: Ruby (Rails)、JavaScript、TypeScript、Vue.js / Nuxt 3、HTML5 / CSS3、Python、SQL、AWS、Docker、Linux、Performance Tuning、English" /></picture>
+
+<br>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-activity-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-activity-light.svg" /><img src="https://raw.githubusercontent.com/kanade0525/kanade0525/main/assets/heading-activity-dark.svg" width="840" alt="ACTIVITY" /></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake.svg" /><img alt="コントリビューションを食べて進むヘビ" src="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake-dark.svg" /></picture>
 
 </div>
 
 <br>
 
-### About Me
-
-- 千葉, Japan / Web エンジニア（業界3年目）
-- 外国語大学 → プログラミングに目覚めて IT 業界へ転身
-- Ruby on Rails / JavaScript が得意（実務 3-4 年）
-- 個人開発ではゲーム、Chrome 拡張、スクレイピング、LINE Bot など雑多に作る
-- 英検準1級 / TOEIC 775
-
+<details>
+<summary>WakaTime</summary>
 <br>
-
-### Tech Stack
-
-**Languages**
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-
-**Frameworks & Libraries**
-
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
-![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white)
-![Ruby on Rails](https://img.shields.io/badge/Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white)
-![Phaser](https://img.shields.io/badge/Phaser.js-CE3262?style=for-the-badge&logoColor=white)
-
-**Infrastructure & Tools**
-
-![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Chrome Extensions](https://img.shields.io/badge/Chrome_Extensions-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
-![Google Apps Script](https://img.shields.io/badge/GAS-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-<br>
-
-### Featured Projects
-
-<div align="center">
-  <a href="https://github.com/kanade0525/roguelike-game">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kanade0525&repo=roguelike-game&theme=tokyonight&hide_border=true&bg_color=00000000" />
-  </a>
-  <a href="https://github.com/kanade0525/cron-translator-extension">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kanade0525&repo=cron-translator-extension&theme=tokyonight&hide_border=true&bg_color=00000000" />
-  </a>
-</div>
-<div align="center">
-  <a href="https://github.com/kanade0525/midi_writer">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kanade0525&repo=midi_writer&theme=tokyonight&hide_border=true&bg_color=00000000" />
-  </a>
-  <a href="https://github.com/kanade0525/sawayaka-scraper">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kanade0525&repo=sawayaka-scraper&theme=tokyonight&hide_border=true&bg_color=00000000" />
-  </a>
-</div>
-
-<br>
-
-### GitHub Stats
-
-<div align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=kanade0525&count_private=true&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kanade0525&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" />
-</div>
-
-<br>
-
-### Streak
-
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=kanade0525&theme=tokyonight&hide_border=true&locale=ja&date_format=%5BY.%5Dn.j&background=00000000)](https://git.io/streak-stats)
-
-</div>
-
-<br>
-
-### Profile Summary
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/0-profile-details.svg" />
-</div>
-<div align="center">
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/1-repos-per-language.svg" />
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/2-most-commit-language.svg" />
-</div>
-<div align="center">
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/3-stats.svg" />
-  <img src="https://raw.githubusercontent.com/kanade0525/kanade0525/profile-summary/tokyonight/4-productive-time.svg" />
-</div>
-
-<br>
-
-### WakaTime
 
 <!--START_SECTION:waka-->
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-30.93%20million%20lines%20of%20code-blue?style=flat)
@@ -175,46 +106,4 @@ Python                   2 repos             █░░░░░░░░░░�
  Last Updated on 15/11/2026 02:54:03 UTC
 <!--END_SECTION:waka-->
 
-<br>
-
-### Contribution Graph
-
-<div align="center">
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=kanade0525&theme=tokyo-night&hide_border=true&bg_color=00000000)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
-<br>
-
-### Trophy
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=kanade0525&theme=tokyonight&no-frame=true&no-bg=true&column=6&title=MultiLanguage,Commit,Issues,PullRequest,Repository)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
-<br>
-
-### Space Shooter
-
-<div align="center">
-
-![Space Shooter](gh-space-shooter.gif)
-
-</div>
-
-<br>
-
-### Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/kanade0525/kanade0525/output/github-snake-dark.svg" />
-</picture>
-
-</div>
+</details>
