@@ -2,7 +2,7 @@ name: Profile Widgets
 
 # プロフィールに載せる統計の画像を、1日1回まとめて作り直す。
 #   assets/stat-*.svg       … 自作の STATUS の窓 (tools/stats.cjs)
-#   widgets/*.svg           … GitHub Stats / 使用言語 / WakaTime / Trophy / メトリクス
+#   widgets/*.svg           … GitHub Stats / 使用言語 / Trophy / メトリクス
 #   profile-3d-contrib/*    … 3D コントリビューション
 # 公開サーバーが止まっている部品は、本家が配っている Actions 版でここに生成している。
 
@@ -94,38 +94,6 @@ jobs:
           path: widgets/top-langs-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # ---- WakaTime の言語カード ----
-      # カードは WakaTime の公開プロフィールから作られる。ユーザー名はトークンから引く
-      - name: WakaTime のユーザー名
-        id: waka
-        continue-on-error: true
-        env:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-        run: |
-          name="$(curl -fsS "https://wakatime.com/api/v1/users/current?api_key=${WAKATIME_API_KEY}" | jq -r '.data.username // .data.id // empty')"
-          test -n "$name"
-          echo "name=$name" >> "$GITHUB_OUTPUT"
-      - name: WakaTime (dark)
-        if: steps.waka.outputs.name != ''
-        continue-on-error: true
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: wakatime
-          options: username=${{ steps.waka.outputs.name }}&layout=compact&langs_count=6&${{ env.DARK }}
-          path: widgets/wakatime-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
-      - name: WakaTime (light)
-        if: steps.waka.outputs.name != ''
-        continue-on-error: true
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: wakatime
-          options: username=${{ steps.waka.outputs.name }}&layout=compact&langs_count=6&${{ env.LIGHT }}
-          path: widgets/wakatime-light.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
-
       # ---- Trophy ----
       # 本家 README が案内している Actions 版。フォークのブランチなので、中身が変わらないようコミットで固定する。
       # GITHUB_TOKEN ではユーザー情報を取れないため、本人のトークンを渡している
@@ -175,8 +143,8 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
-          plugin_habits: yes
-          plugin_achievements: yes
+          # habits と achievements は metrics 側の不具合で「Unexpected error」になるので入れていない
+          # (achievements は GitHub が廃止した Projects (classic) を読みに行って失敗する)
       - name: メトリクスを置く
         continue-on-error: true
         run: |
