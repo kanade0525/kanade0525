@@ -2,7 +2,7 @@ name: Profile Widgets
 
 # プロフィールに載せる統計の画像を、1日1回まとめて作り直す。
 #   assets/stat-*.svg       … 自作の STATUS の窓 (tools/stats.cjs)
-#   widgets/*.svg           … GitHub Stats / 使用言語 / メトリクス
+#   widgets/*.svg           … GitHub Stats / 使用言語 / WakaTime / Trophy / メトリクス
 #   profile-3d-contrib/*    … 3D コントリビューション
 # 公開サーバーが止まっている部品は、本家が配っている Actions 版でここに生成している。
 
@@ -24,8 +24,9 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # 外から借りてきた Action に渡すのは、このリポジトリ用の GITHUB_TOKEN だけ。
-  # 本人のトークン (GH_TOKEN) と WakaTime のトークンは、自作の tools/stats.cjs にしか渡さない
+  # 外から借りてきた Action には、基本このリポジトリ用の GITHUB_TOKEN だけを渡す。
+  # 本人のトークン (GH_TOKEN) を渡しているのは、それが無いとデータを取れない Trophy とメトリクスだけ
+  # (2026-11-15 に本人の了承を得た)。WakaTime のトークンは外の Action には渡さない
   DARK: bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=5cc6f2&border_color=ffffff&ring_color=f7d51d&border_radius=0
   LIGHT: bg_color=ffffff&title_color=333333&text_color=333333&icon_color=1479a8&border_color=212529&ring_color=a88a00&border_radius=0
 
@@ -93,6 +94,64 @@ jobs:
           path: widgets/top-langs-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      # ---- WakaTime の言語カード ----
+      # カードは WakaTime の公開プロフィールから作られる。ユーザー名はトークンから引く
+      - name: WakaTime のユーザー名
+        id: waka
+        continue-on-error: true
+        env:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        run: |
+          name="$(curl -fsS "https://wakatime.com/api/v1/users/current?api_key=${WAKATIME_API_KEY}" | jq -r '.data.username // .data.id // empty')"
+          test -n "$name"
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+      - name: WakaTime (dark)
+        if: steps.waka.outputs.name != ''
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: wakatime
+          options: username=${{ steps.waka.outputs.name }}&layout=compact&langs_count=6&${{ env.DARK }}
+          path: widgets/wakatime-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+      - name: WakaTime (light)
+        if: steps.waka.outputs.name != ''
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: wakatime
+          options: username=${{ steps.waka.outputs.name }}&layout=compact&langs_count=6&${{ env.LIGHT }}
+          path: widgets/wakatime-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      # ---- Trophy ----
+      # 本家 README が案内している Actions 版。フォークのブランチなので、中身が変わらないようコミットで固定する。
+      # GITHUB_TOKEN ではユーザー情報を取れないため、本人のトークンを渡している
+      - name: Trophy (dark)
+        continue-on-error: true
+        uses: Erik-Donath/github-profile-trophy@eb0893b31de06841663555d10aa43eb7cf27952f
+        with:
+          username: ${{ github.repository_owner }}
+          file: widgets/trophy-dark.svg
+          theme: darkhub
+          max-cols: "6"
+          no-background: "true"
+          no-frame: "true"
+          token: ${{ secrets.GH_TOKEN }}
+      - name: Trophy (light)
+        continue-on-error: true
+        uses: Erik-Donath/github-profile-trophy@eb0893b31de06841663555d10aa43eb7cf27952f
+        with:
+          username: ${{ github.repository_owner }}
+          file: widgets/trophy-light.svg
+          theme: flat
+          max-cols: "6"
+          no-background: "true"
+          no-frame: "true"
+          token: ${{ secrets.GH_TOKEN }}
+
       # ---- 3D コントリビューション ---- (profile-3d-contrib/ に出る)
       - name: 3D コントリビューション
         continue-on-error: true
@@ -106,18 +165,18 @@ jobs:
         continue-on-error: true
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           user: ${{ github.repository_owner }}
           filename: metrics.svg
           output_action: none
           template: classic
-          base: header, activity, community, metadata
+          base: header, activity, community, repositories, metadata
           config_timezone: Asia/Tokyo
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          # languages / habits / achievements と base の repositories は、GITHUB_TOKEN では
-          # このリポジトリしか見えず「Unexpected error」や「1 Repository」になるので外している。
-          # 本人のトークンを渡せば出せるが、外の Action に渡すことになるので本人の判断を待つ
+          plugin_languages: yes
+          plugin_habits: yes
+          plugin_achievements: yes
       - name: メトリクスを置く
         continue-on-error: true
         run: |
