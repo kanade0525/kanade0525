@@ -2,7 +2,7 @@ name: Profile Widgets
 
 # プロフィールに載せる統計の画像を、1日1回まとめて作り直す。
 #   assets/stat-*.svg       … 自作の STATUS の窓 (tools/stats.cjs)
-#   widgets/*.svg           … GitHub Stats / 使用言語 / Trophy / メトリクス
+#   widgets/*.svg           … GitHub Stats / 使用言語 / メトリクス
 #   profile-3d-contrib/*    … 3D コントリビューション
 # 公開サーバーが止まっている部品は、本家が配っている Actions 版でここに生成している。
 
@@ -93,31 +93,6 @@ jobs:
           path: widgets/top-langs-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # ---- Trophy ----
-      # 本家 README が案内している Actions 版。フォークのブランチなので、中身が変わらないようコミットで固定する
-      - name: Trophy (dark)
-        continue-on-error: true
-        uses: Erik-Donath/github-profile-trophy@eb0893b31de06841663555d10aa43eb7cf27952f
-        with:
-          username: ${{ github.repository_owner }}
-          file: widgets/trophy-dark.svg
-          theme: darkhub
-          max-cols: "6"
-          no-background: "true"
-          no-frame: "true"
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Trophy (light)
-        continue-on-error: true
-        uses: Erik-Donath/github-profile-trophy@eb0893b31de06841663555d10aa43eb7cf27952f
-        with:
-          username: ${{ github.repository_owner }}
-          file: widgets/trophy-light.svg
-          theme: flat
-          max-cols: "6"
-          no-background: "true"
-          no-frame: "true"
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       # ---- 3D コントリビューション ---- (profile-3d-contrib/ に出る)
       - name: 3D コントリビューション
         continue-on-error: true
@@ -136,13 +111,13 @@ jobs:
           filename: metrics.svg
           output_action: none
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, community, metadata
           config_timezone: Asia/Tokyo
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          plugin_languages: yes
-          plugin_habits: yes
-          plugin_achievements: yes
+          # languages / habits / achievements と base の repositories は、GITHUB_TOKEN では
+          # このリポジトリしか見えず「Unexpected error」や「1 Repository」になるので外している。
+          # 本人のトークンを渡せば出せるが、外の Action に渡すことになるので本人の判断を待つ
       - name: メトリクスを置く
         continue-on-error: true
         run: |
