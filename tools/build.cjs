@@ -24,29 +24,30 @@ const { execFileSync } = require('child_process');
 const opentype = require('opentype.js');
 
 const ROOT = path.resolve(__dirname, '..');
-const OUT = path.join(ROOT, 'assets');
+const OUT = process.env.OUT || path.join(ROOT, 'assets');
 const PORTFOLIO = process.env.PORTFOLIO || path.join(os.homedir(), 'development', 'portfolio');
-const FONT_PATH = path.join(
-  PORTFOLIO, 'font', 'NuAnkoMochi-v1.0.0-20200104', 'Nuあんこもち', 'NuAnkoMochi-Reg.otf'
-);
+// Actions の上ではポートフォリオを別に取ってきて、FONT でフォントの場所を渡す
+const FONT_PATH =
+  process.env.FONT ||
+  path.join(PORTFOLIO, 'font', 'NuAnkoMochi-v1.0.0-20200104', 'Nuあんこもち', 'NuAnkoMochi-Reg.otf');
 
 /* ---------- 色 (ポートフォリオの暗いテーマ / 明るいテーマと同じ値) ---------- */
 const THEMES = {
   dark: {
     window: '#000', line: '#fff', text: '#fff', name: '#e9e9ef', weak: '#a2a2b0', link: '#5cc6f2',
     shotBg: '#0d0d13',
-    blue: '#209cee', green: '#92cc41', yellow: '#f7d51d',
+    blue: '#209cee', green: '#92cc41', yellow: '#f7d51d', red: '#e76e55',
     skill: {
       ruby: '#ef7a67', javascript: '#d7bb2e', typescript: '#6cb3f0', vue: '#58c08d',
       html: '#f0967c', python: '#6fb2e8', sql: '#8fb5c9', aws: '#f0a63e',
       docker: '#58b3f2', linux: '#c9c9d6', english: '#b79ce0', perf: '#f0836a',
     },
   },
-  // 見出しの3色は、白地でも読めるようにスキルの色 (コントラスト比3:1以上) から取っている
+  // 見出しの4色は、白地でも読めるようにスキルの色 (コントラスト比3:1以上) から取っている
   light: {
     window: '#fff', line: '#212529', text: '#333', name: '#333', weak: '#6b6b6b', link: '#1479a8',
     shotBg: '#222529',
-    blue: '#1B7FCC', green: '#35895F', yellow: '#A88A00',
+    blue: '#1B7FCC', green: '#35895F', yellow: '#A88A00', red: '#B5432E',
     skill: {
       ruby: '#9F2616', javascript: '#A88A00', typescript: '#3178C6', vue: '#35895F',
       html: '#D45D3C', python: '#3776AB', sql: '#436374', aws: '#C77700',
@@ -357,23 +358,42 @@ const WORKS = [
   },
 ];
 
-let heights = [];
-for (const theme of Object.keys(THEMES)) {
-  THEME = theme;
-  C = THEMES[theme];
-  header();
-  heading('heading-works', 'WORKS', C.blue);
-  heading('heading-skill', 'SKILL', C.green);
-  heading('heading-activity', 'ACTIVITY', C.yellow);
-  heights = WORKS.map(work);
-  skills();
+/** テーマを1つずつ切り替えながら fn を呼ぶ */
+function eachTheme(fn) {
+  for (const theme of Object.keys(THEMES)) {
+    THEME = theme;
+    C = THEMES[theme];
+    fn(C, theme);
+  }
 }
 
-if (new Set(heights).size > 1) {
-  console.warn(`注意: 作品カードの高さがそろっていません (${heights.join(', ')})。説明文の行数をそろえてください。`);
+/** フォントに無い文字を使っていたら、知らせて止める */
+function assertNoMissing() {
+  if (missing.size) {
+    console.error(`NG: Nuあんこもちに無い文字があります: ${[...missing].join(' ')}`);
+    process.exit(1);
+  }
 }
-if (missing.size) {
-  console.error(`NG: Nuあんこもちに無い文字があります: ${[...missing].join(' ')}`);
-  process.exit(1);
+
+function main() {
+  let heights = [];
+  eachTheme(() => {
+    header();
+    heading('heading-works', 'WORKS', C.blue);
+    heading('heading-skill', 'SKILL', C.green);
+    heading('heading-status', 'STATUS', C.red);
+    heading('heading-activity', 'ACTIVITY', C.yellow);
+    heights = WORKS.map(work);
+    skills();
+  });
+  if (new Set(heights).size > 1) {
+    console.warn(`注意: 作品カードの高さがそろっていません (${heights.join(', ')})。説明文の行数をそろえてください。`);
+  }
+  assertNoMissing();
+  console.log('OK');
 }
-console.log('OK');
+
+// 毎日作り直す統計の画像は tools/stats.cjs。部品はここから借りる
+module.exports = { eachTheme, assertNoMissing, text, textWidth, dqWindow, svg, write };
+
+if (require.main === module) main();
